@@ -1,0 +1,13 @@
+<svg id="Лого" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="185" height="24" viewBox="0 0 185 24">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <image id="internet" x="5" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACzklEQVRIiZWWS0hVURSGP6/2QisiSh0UTgJBSywppCCywl5GNCkH4SwQKjIiByI9CKIi0pImzYSyJhWlI0soKCsqzBKEGtXASqIHlhqC8ct/Y3M8V28LDpyz9r/W3vtfr5PBkftMITOBTcBGoBhYZOgg8BZ4AMjBn1QuEin0s4F64B1QA3wESoAxPyXW1RhTb5tJkhWjWwG0AY+AMuAb0AmcATKMGQd2AZuBBcAp4CVQDfROdYMKoB04ANSaikbgPdAc4JqtazSm1jbt9hG7ga7daj7zvFYI7AXqYm5a57VCY/Ns22pfE5KkSPxds8EX4DRwEvhlukZiNhjxmp5soAfYBiwGrgOrhElm0TFgCXAwcLAauGVOl3uzWV4btdM3jtlu4Hlge9lJcE4bzHAmlAMDEQrm+SaSOc4WyVlg2O/HgZ/AxcA2H+gGlom7SuBFxDnWdwTfcvjdz3Cg7zA2lAH7rEw46vdiOC4yr9NJj7FRkc+KhBf7Iovid8hFNZ2MGZsdwclnkbIoF9gOrAsW55vzwxGj9Sk2E/Yo8CPiIzdZB+NpnPR/ZcKnbvDZFfgqcJAD7AGaUjiN6vcDF0xVUlYCaxPmqjhiIOBcIDONU2caOxTRy2efNugCdsQYqh2XprFBqbFRkc+uLHfKFhdHWAvSbzWFa4ClwBav6WAfgGfGdEac57sT7Eu47K8ADQFAmVUAnADuOHvG3TkH/S7dbWMKbJOUBvscTTa7Sw5ylQLjAF918G+4oRGkbTLI1W6Qn4CnwE3gsYtXQf7XTUcM7DZIxffbrfiuqzIaxBz3qZ1Avzdt8YHKkx04nAe9vsEGTzJs2JYiXZu81u/vMttWhVMtbuiX2PChO+VXB1E3CUUn18hc6JsoJqLsdQiKm8kCiL9DnrNPHAu1avV4iWbHeQ8W0SFq1N4nDaZ0f1sUNBWOppVEU0+5rxpK/dsC/AUSXLD/fuUCBwAAAABJRU5ErkJggg=="/>
+  <text id="Новостное_агентство" data-name="Новостное агентство" class="cls-1" transform="translate(33.151 16.734)">Новостное агентство</text>
+</svg>

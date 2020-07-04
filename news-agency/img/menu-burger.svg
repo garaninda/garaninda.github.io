@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="burger" class="cls-1">
+    <image id="Color_Fill_1_copy_2" data-name="Color Fill 1 copy 2" width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAMElEQVQ4jWP8////fwYqAiZqGgYCLAwMDIyD2oUj0EBQpIwmm1EDSQSDPNkwMDAAAAOsBiRkUHhHAAAAAElFTkSuQmCC"/>
+  </g>
+</svg>

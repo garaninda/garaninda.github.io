@@ -70,7 +70,7 @@ ul {
 
 .hero {
   height: calc(100vh - 165.3px);
-  background: url(img/hero.jpeg) no-repeat;
+  background: url(/img/hero.jpeg) no-repeat;
 }
 
 .hero .container {

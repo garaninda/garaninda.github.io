@@ -17,8 +17,8 @@
 
 @font-face {
   font-family: "OpenSans-LightItalic";
-  src: url('/coworking//fonts/opensans-lightitalic.woff2') format('woff2'),
-       url('/coworking//fonts/opensans-lightitalic.woff') format('woff');
+  src: url('../coworking//fonts/opensans-lightitalic.woff2') format('woff2'),
+       url('../coworking//fonts/opensans-lightitalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   /* font-display: swap; */
@@ -174,7 +174,7 @@ section {
 .hero {
   position: relative;
   height: calc(100vh - 145.3px);
-  background: url(/coworking/img/hall-2.jpg) no-repeat center;
+  background: url(../coworking/img/hall-2.jpg) no-repeat center;
   background-size: cover;
   
 }

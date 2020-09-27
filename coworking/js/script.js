@@ -2,11 +2,18 @@ $(function () {
 
   const disableScroll = function (){
     $("body, html").css("overflow", "hidden");
-    $('.popup-window').css("overflow", "auto")};
+    $('.popup-container').css("overflow", "auto")};
     
   const enableScroll = function (){
     $("body, html").css("overflow", "auto")};
   
+  // $('#room-c').on('mouseover', function(){
+  //   $('.plan-img').html('<img src="/img/gallery/open-space2.jpg">').fadeIn();
+  // });
+  // $('#room-c').on('mouseout', function(){
+  //   $('.plan-img').fadeOut();
+  // });
+
   $('.offices__btn').on('click', function () {
     let value = $(this).parent().find('.offices__title').text();
     $('.popup__heading').text(value);
@@ -43,14 +50,7 @@ $(function () {
     let idTab = $(this).parent().attr('id');
     $('#tarif-place__input').val(idTab);
   });
-  // $('#fixed-place__input').on('change',function() {
-  //   if ($(this).is(':checked')) {
-  //     if ($('select').val() == 'Новичок') {
-  //       // $('#sum') = 
-  //     }
-  //   }
-  // });
-
+  
   ( function( factory ) {
     if ( typeof define === "function" && define.amd ) {
   
@@ -95,9 +95,6 @@ $(function () {
     
   });
 
-  // $( "#start-date" ).datepicker( "option", "defaultDate", +7 );
-  // var currentDate = $( ".selector" ).datepicker( "getDate" );
-
   $('#tarif__select').change(function() {
       if ($(this).val() == 'Новичок') {
         $('.radio-newbie').show();
@@ -113,12 +110,8 @@ $(function () {
         $('.radio-month').show();
       }
   });
-
-  
-
+ 
   $('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-9999" });
-  // $('input[type="date"]').inputmask("99/99/9999");
-
 
   $('.tarif-nav__list a').on('click', function (e) {
     e.preventDefault();
@@ -140,42 +133,6 @@ $(function () {
     console.log(idTab);
   });
   
-
-  // $('#room-C').on('hover', function (){
-  //   $('.room-c').show();
-  // });
-  
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    loop: true,
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  var mySwiper = new Swiper('.gallery-container', {
-    slidesPerView: '1',
-    loop: true,
-    autoplay: {
-      delay: 5000,
-    },
-    spaceBetween: 20,
-    // autoHeight: true,
-    // centeredSlides: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    }
-    
-  });
-
   $('form').each(function () {
     $(this).validate({
       errorPlacement(error, element) {
@@ -225,12 +182,5 @@ $(function () {
       }
     });
   });
-
-  // $('#fixed-place').on('click',function(){
-  //   if ($('#fixed-place').is(':checked')) {
-  //     console.log('1');
-  //     $('.tarif__price').text("от 1000 рублей");
-  //   }
-  // });
 
 });

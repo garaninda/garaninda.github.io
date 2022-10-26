@@ -1,15 +1,275 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My git page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/icon-font.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=QEw5db8eOR">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=QEw5db8eOR">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=QEw5db8eOR">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=QEw5db8eOR">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=QEw5db8eOR" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico?v=QEw5db8eOR">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=QEw5db8eOR">
+  <meta name="theme-color" content="#ffffff">
+  <title>Разработка сайтов: Дмитрий Гаранин</title>
 </head>
+
 <body>
-    <h1>Выбери сайт:</h1>
-    <ul>
-        <li><a href="/news-agency/index.html">Новостное агенство</a></li>
-        <li><a href="/coworking/index.html">Коворкинг</a></li>
-    </ul>
+  <header class="header fix-block">
+    <div class="header-container container" id="sticky-header">
+      <button class="header-burger-btn" aria-label="Меню">
+        <span class="bar bar--top"></span>
+        <span class="bar bar--mid"></span>
+        <span class="bar bar--bot"></span>
+      </button>
+    
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#what-i-do">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#examples">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="#price">Стоимость</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__phone" href="tel:+79322004567">+7 (932) 200 45-67</a>
+      <button class="header__btn call-btn modal-btn" data-path="call">Заказать звонок</button>
+      <button class="call-btn call-btn-mobile modal-btn" aria-label="Заказать звонок" data-path="call">
+        <i class="icon-phone"></i>
+      </button>
+    </div>
+    <section class="hero">
+      <div class="letter">
+        <div class="letter__braces letters">
+          <span>{&nbsp;}</span>
+        </div>
+        <div class="letter__div-medium letters">
+          <span>&lt;div&gt;</span>
+        </div>
+        <div class="letter__div-large letters">
+          <span>&lt;div&gt;</span>
+        </div>
+        <div class="letter__hash letters">
+          <span>#</span>
+        </div>
+        <div class="letter__end-tag letters">
+          <span>&lt;/&gt;</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Дмитрий Гаранин</h1>
+          <p class="hero__desc">Frontend-разработчик и веб-верстальщик</p>
+          <button class="hero__btn orange-btn modal-btn" data-path="order">Узнать больше</button>
+        </div>
+        <picture class="hero__image">
+          <source srcset="img/human.webp" type="image/webp">
+          <img class="hero__image" src="img/human.png" alt="Гаранин Дмитрий">
+        </picture>
+      </div>
+
+    </section>
+  </header>
+  <main>
+
+    <section class="what-i-do" id="what-i-do">
+      <div class="container">
+        <h2 class="section-heading">Что я делаю</h2>
+        <ul class="what__list">
+          <li class="what__item">            
+            <p class="what__descr what__icon what__icon--1">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</p>
+          </li>
+          <li class="what__item">          
+            <p class="what__descr what__icon what__icon--2">Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
+          </li>
+          <li class="what__item">
+            <p class="what__descr what__icon what__icon--3">Frontend–разработка и&nbsp;программирование</p>
+          </li>
+          <li class="what__item">
+            <p class="what__descr what__icon what__icon--4">Исправление и&nbsp;доработка существующей вёрстки</p>
+          </li>
+        </ul>
+        <button class="what__btn orange-btn modal-btn" data-path="order">
+          Узнать стоимость
+        </button>
+      </div>
+    </section>
+
+    <section class="examples" id="examples">
+      <div class="container">
+        <h2 class="section-heading examples__heading">Примеры моих работ</h2>
+        <button class="swiper-button-prev"></button>
+        <button class="swiper-button-next"></button>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="examples__item swiper-slide">
+              <a href="#examples" target="_blank" class="examples__link">
+                <figure class="examples__wrapper">
+                  <img class="examples__image" src="img/site1.jpg" alt="Сайт психолога Веры Антоновой">
+                  <figcaption class="examples__desc">Сайт психолога Веры Антоновой</figcaption>
+                </figure>
+              </a>
+            </div>
+
+            <div class="examples__item swiper-slide">
+              <a href="#examples" target="_blank" class="examples__link">
+                <figure class="examples__wrapper">
+                  <img class="examples__image" src="img/site2.jpg" alt="Сайт магазина детской одежды">
+                  <figcaption class="examples__desc">Сайт магазина детской одежды</figcaption>
+                </figure>
+              </a>
+            </div>
+
+            <div class="examples__item swiper-slide">
+              <a href="#examples" target="_blank" class="examples__link">
+                <figure class="examples__wrapper">
+                  <img class="examples__image" src="img/site3.jpg" alt="Сайт магазина Рыболов">
+                  <figcaption class="examples__desc">Сайт магазина "Рыболов"</figcaption>
+                </figure>
+              </a>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+
+        <button class="examples__btn orange-btn modal-btn" data-path="order">Заказать проект</button>
+      </div>
+    </section>
+
+    <section class="highlight" id="price">
+      <div class="letter">
+        <div class="letter__braces">{&nbsp;}</div>
+        <div class="letter__braces2">{&nbsp;}</div>
+        <div class="letter__div-large">&lt;div&gt;</div>
+        <div class="letter__hash">#</div>
+        <div class="letter__end-tag">&lt;/&gt;</div>
+      </div>
+
+      <div class="container">
+        <div class="highlight__wrapper">
+          <h2 class="highlight__heading">
+            Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+          </h2>
+          <span class="highlight__desc">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных
+            и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="#what-i-do">Услуги</a></li>
+          <li class="footer-nav__item"><a href="#examples">Портфолио</a></li>
+          <li class="footer-nav__item"><a href="#price">Стоимость</a></li>
+        </ul>
+      </nav>
+      <div class="footer-mid">
+        <a class="footer-mid__link" href="tel:+79322004567">
+          <i class="icon-phone footer__icon">&nbsp;&nbsp;</i>+7 (932) 200-4567
+        </a>
+        <a class="footer-mid__link" href="mailto:garanin72@gmail.com">
+          <i class="icon-envelope footer__icon">&nbsp;&nbsp;</i>garanin72@gmail.com
+        </a>
+      </div>
+      <div class="footer-right">
+        <button class="footer__btn call-btn modal-btn" data-path="call">Заказать звонок</button>
+        <div class="social">
+          <a class="social__link" href="http://vk.com/garaninda" target="_blank" aria-label="Вконтакте">
+            <i class="icon-vk"></i>          
+          </a>
+          <a class="social__link" href="http://facebook.com/dim.garanin" target="_blank" aria-label="Facebook">
+            <i class="icon-facebook"></i>
+          </a>
+          <a class="social__link" href="http://twitter.com/garaninda" target="_blank" aria-label="Twitter">
+            <i class="icon-twitter"></i>
+          </a>
+          <a class="social__link" href="http://instagram.com/garaninda" target="_blank" aria-label="Instagram">
+            <i class="icon-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bar"><span>&copy; Дмитрий Гаранин, 2020</span></div>
+
+  </footer>
+
+  <div class="modal">
+    <div class="modal__container" data-target="call">
+      <button class="modal-close"><span class="close"></span></button>
+      <div class="modal-content">
+        <h2 class="modal-content__title">Заказать звонок</h2>
+        <p class="modal-content__text">Оставьте Ваши контактные данные </p>
+        <form class="modal-content__form" action="#" method="POST" autocomplete="on">
+          <label class="visually-hidden" for="call-name">Имя</label>
+          <input class="modal-content__input" type="text" id="call-name" name="Имя" placeholder="Имя" required>
+          <label class="visually-hidden" for="call-tel">Телефон</label>
+          <input class="modal-content__input" type="tel" id="call-tel" name="Телефон" placeholder="+7 (___) ___-____" required>
+          <label for="call-agree" class="modal-content__check">
+            <input type="checkbox" name="Согласие" id="call-agree">
+            <span>Согласие на обработку данных</span>
+          </label>
+          <button class="orange-btn modal-content__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal__container" data-target="order">
+      <button class="modal-close"><span class="close"></span></button>
+      <div class="modal-content">
+        <h2 class="modal-content__title">Заказать звонок</h2>
+        <p class="modal-content__text">Оставьте Ваши контактные данные </p>
+        <form class="modal-content__form" action="#" method="POST" autocomplete="on">
+          <label class="visually-hidden" for="order-name">Имя</label>
+          <input class="modal-content__input" type="text" name="Имя" id="order-name" placeholder="Имя" required>
+          <label class="visually-hidden" for="order-tel">Телефон</label>
+          <input class="modal-content__input" type="tel" name="Телефон" id="order-tel" placeholder="+7 (___) ___-____" required>
+          <label class="visually-hidden" for="order-email">E-mail</label>
+          <input class="modal-content__input" type="email" name="E-mail" id="order-email" placeholder="E-mail" required>
+          <label for="order-agree" class="modal-content__check">
+            <input type="checkbox" name="Согласие" id="order-agree">
+            <span>Согласие на обработку данных</span>
+          </label>
+          <button class="orange-btn modal-content__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="modal__container" data-target="thanks">
+      <button class="modal-close"><span class="close"></span></button>
+      <div class="modal-content">
+        <h2 class="modal-content__title">Спасибо за заявку!</h2>
+        <p class="modal-content__text">Наш менеджер скоро с Вами свяжется!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.5.0.min.js"></script>
+  <script src="./js/jquery.inputmask.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/script.js"></script>
+
 </body>
+
 </html>

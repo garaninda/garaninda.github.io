@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/icons.eot") format("embedded-opentype"),
+url("../fonts/icons.woff2") format("woff2"),
+url("../fonts/icons.woff") format("woff");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+    content: "\f101";
+}
+.icon-facebook:before {
+    content: "\f102";
+}
+.icon-instagram:before {
+    content: "\f103";
+}
+.icon-phone:before {
+    content: "\f104";
+}
+.icon-twitter:before {
+    content: "\f105";
+}
+.icon-vk:before {
+    content: "\f106";
+}
